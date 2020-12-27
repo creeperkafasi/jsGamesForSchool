@@ -1,0 +1,29 @@
+/* Tüm sitelerde bulunan global css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700;900&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
+
+/* Google fonts api'dan birkaç tane güzel font seçtim */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    --main-dark: #161616;
+    --secondary-dark: #181818;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0c0c0c;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #383641;
+    border-radius: 5px;
+}
+
+body {
+    background-color: var(--main-dark);
+}

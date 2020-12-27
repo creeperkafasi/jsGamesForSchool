@@ -1,0 +1,17 @@
+/* index.html style */
+
+.title-main {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.title-secondary {
+    margin-top: 10px;
+    font-size: large;
+}
