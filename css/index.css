@@ -1,5 +1,28 @@
 /* index.html style */
 
+
+/* ---- reset ---- */
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    position: fixed;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+    background-color: --dark-main;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
 .title-main {
     font-family: Montserrat;
     font-weight: 700;
@@ -7,7 +30,7 @@
     text-align: center;
     color: white;
     margin: auto;
-    margin-top: 20px;
+    padding-top: 10px;
     width: fit-content;
 }
 
@@ -15,3 +38,27 @@
     margin-top: 10px;
     font-size: large;
 }
+
+.page-content {
+    margin-left: 6rem;
+    padding: 10px;
+}
+
+.navbar {
+    color: white;
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: rgb(14, 14, 14);
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.nav-item {}
