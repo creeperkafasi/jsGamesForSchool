@@ -26,21 +26,37 @@
     font-family: Montserrat;
     font-weight: 700;
     font-size: 80px;
-    text-align: center;
-    color: white;
-    margin: auto;
     padding-top: 10px;
+    margin: auto;
     width: fit-content;
 }
 
 .title-secondary {
+    margin: auto;
+    width: fit-content;
     margin-top: 10px;
     font-size: large;
 }
 
 .page-content {
+    color: white;
     margin-left: 6rem;
     padding: 10px;
+}
+
+.about-main {
+    font-family: Roboto;
+    margin: auto;
+    width: fit-content;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+.about-secondary {
+    margin: auto;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: 18px;
 }
 
 .navbar {
@@ -58,4 +74,9 @@
     display: flex;
     flex-direction: column;
     /* align-items: center; */
+}
+
+.lipsum {
+    color: black;
+    visibility: hidden;
 }
