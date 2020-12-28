@@ -36,12 +36,6 @@
     font-size: large;
 }
 
-.page-content {
-    color: white;
-    margin-left: 6rem;
-    padding: 10px;
-}
-
 .about-container div {
     font-family: Montserrat;
     margin: auto;
@@ -57,23 +51,6 @@
 .about-secondary {
     margin-top: 10px;
     font-size: 18px;
-}
-
-.navbar {
-    color: white;
-    width: 5rem;
-    height: 100vh;
-    position: fixed;
-    background-color: rgb(14, 14, 14);
-}
-
-.navbar-nav {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
 }
 
 .game-selector-container {
@@ -124,6 +101,10 @@
 
 .game-item div {
     margin: auto;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 .lipsum {

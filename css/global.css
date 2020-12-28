@@ -9,6 +9,7 @@
     margin: 0px;
     --main-dark: #121212;
     --secondary-dark: #181818;
+    font-family: Roboto;
 }
 
 :root {
@@ -30,4 +31,9 @@ body::-webkit-scrollbar-thumb {
 
 body {
     background-color: var(--main-dark);
+}
+
+.page-content {
+    color: white;
+    padding: 10px;
 }

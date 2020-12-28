@@ -1,0 +1,51 @@
+.title-main {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 80px;
+    padding-top: 10px;
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.title-secondary {
+    margin: auto;
+    width: fit-content;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.geri {
+    width: 6rem;
+    height: 6rem;
+    position: fixed;
+    margin: 10px;
+}
+
+.geri button {
+    font-size: 18px;
+    background-color: #68e77d;
+    border: 0px;
+    width: 100%;
+    height: 100%;
+    transition-duration: 500ms;
+}
+
+.geri button:hover {
+    background-color: rgb(65, 228, 53);
+    border: solid 2px greenyellow;
+}
+
+.oyun-container {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#oyun-canvas {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, rgb(164, 255, 78), rgb(17, 200, 0));
+    image-rendering: pixelated;
+}
