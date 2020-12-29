@@ -24,8 +24,22 @@
         </div>
 
         <div class="oyun-container">
+            <table>
+                <tr>
+                    <td id="gameoverMesaj" style="visibility:hidden">Kaybettiniz</td>
+                </tr>
+                <tr>
+                    <th id="puanBaslık">Puan:</th>
+                    <td id="puanData">0</td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button onclick="snakeReset()">Tekrar dene</button></td>
+                </tr>
+            </table>
             <canvas id="oyun-canvas"></canvas>
+
         </div>
+
     </div>
     <script src="snake.js"></script>
 </body>

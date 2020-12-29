@@ -1,19 +1,19 @@
-/* Tüm sitelerde bulunan global css */
+/* Tüm htmllerde bulunan global css dosyası*/
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700;900&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap');
 
 /* Google fonts api'dan birkaç tane güzel font seçtim */
 
+:root {
+    font-size: 16px;
+    --main-dark: #121212;
+    --secondary-dark: #181818;
+}
+
 * {
     padding: 0px;
     margin: 0px;
-    --main-dark: #121212;
-    --secondary-dark: #181818;
     font-family: Roboto;
-}
-
-:root {
-    font-size: 16px;
 }
 
 body::-webkit-scrollbar {
