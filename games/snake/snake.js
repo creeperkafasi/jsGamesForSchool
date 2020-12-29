@@ -34,6 +34,8 @@ window.addEventListener("keydown", (e) => {
             case "d":
                 direction = "right";
                 break;
+            case " ":
+                direction = undefined;
         }
     }
 
@@ -148,6 +150,7 @@ function addSegment() {
 
 function snakeReset() {
     direction = undefined;
+    puan = 0;
     snake = [
         [1, 1],
         [2, 1],
@@ -162,15 +165,18 @@ function genApple() {
     let generated = true;
 
     while (generated) {
-        applePos[0] = Math.min(Math.floor(Math.random() * 10), 9);
-        applePos[1] = Math.min(Math.floor(Math.random() * 10), 9);
+        applePos[0] = clamp(Math.floor(Math.random() * 10), 1, 8);
+        applePos[1] = clamp(Math.floor(Math.random() * 10), 1, 8);
+
         snake.forEach(part => {
             if (part[0] == applePos[0] || part[1] == applePos[1]) {
                 generated = true;
             } else generated = false;
         });
     }
+}
 
-
-
+//https://stackoverflow.com/questions/11409895/whats-the-most-elegant-way-to-cap-a-number-to-a-segment
+function clamp(n, min, max) {
+    return Math.min(Math.max(n, min), max);
 }
