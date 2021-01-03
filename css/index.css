@@ -81,7 +81,7 @@
 
 .game-item {
     height: 100px;
-    min-width: 100px;
+    min-width: 20vw;
     background-color: rgba(0, 255, 21, 0.246);
     font-family: Inconsolata;
     flex-basis: 0;
