@@ -54,7 +54,7 @@ setInterval(function() {
     puanElement.innerText = puan;
 }, 1);
 
-setInterval(function() {
+function mainloop() {
     if (direction) {
 
         //Hareket sistemi
@@ -109,8 +109,8 @@ setInterval(function() {
             genApple();
         }
     }
-
-}, 500);
+}
+let mainLoopInterval = setInterval(mainloop, 200);
 
 //Puan kazanınca uzama sistemi
 function addSegment() {
