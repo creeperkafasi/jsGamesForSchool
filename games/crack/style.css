@@ -1,0 +1,33 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+.title {
+    height: max-content;
+    font-size: 70px;
+    text-align: center;
+    background-color: blue;
+}
+
+.title a {
+    background-color: deepskyblue;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    height: 90px;
+    width: 90px;
+}
+
+.killswitch {
+    float: right;
+    width: 150px;
+    height: 90px;
+    font-size: 20px;
+}

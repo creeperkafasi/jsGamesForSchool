@@ -24,22 +24,15 @@
     font-weight: 700;
     font-size: 80px;
     padding-top: 10px;
-    margin: auto;
-    width: fit-content;
-    text-align: center;
 }
 
 .title-secondary {
-    margin: auto;
-    width: fit-content;
     margin-top: 10px;
     font-size: large;
 }
 
 .about-container div {
     font-family: Montserrat;
-    margin: auto;
-    width: fit-content;
 }
 
 .about-main {
