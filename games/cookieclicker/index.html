@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="cookie.png" type="image/png">
+    <title>Cookie Clicker</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="page-content">
+        <div class="title-container center">
+            <a href="../../">
+                <button>🏠<br>Geri Dön</button>
+            </a>
+            <div class="title center">
+                Cookie Clicker
+            </div>
+        </div>
+        <div class="center">
+            <table aria-label="oyun">
+                <tr>
+                    <th id="puan" colspan="2">
+                        Kurabiyeler:0
+                    </th>
+                </tr>
+                <tr>
+                    <td id="cookie">
+                        <img src="cookie.png" alt="cookie" title="Click to get a cookie! 🍪" onclick="
+                        cookies += 1*cookieMultiplier;
+                        update();
+                        ">
+                    </td>
+                    <td id="menu-cell">
+                        <div class="menu-container">
+                            <div class="menu-item">
+                                <button>
+                                    Item <br> Price:100
+                                </button>
+                            </div>
+                            <div class="menu-item">
+                                <button>
+                                    Item <br> Price:100
+                                </button>
+                            </div>
+                            <div class="menu-item">
+                                <button>
+                                    Item <br> Price:100
+                                </button>
+                            </div>
+                            <div class="menu-item">
+                                <button>
+                                    Item <br> Price:100
+                                </button>
+                            </div>
+                            <div class="menu-item">
+                                <button>
+                                    Item <br> Price:100
+                                </button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+</html>

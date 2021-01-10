@@ -1,0 +1,62 @@
+.title-container {
+    background-color: var(--secondary-dark);
+    height: 80px;
+    width: 100%;
+    display: flex;
+}
+
+.title-container a {
+    position: relative;
+}
+
+.title-container a button {
+    height: 80px;
+    width: 80px;
+    font-size: 19px;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+}
+
+.title {
+    font-size: 75px;
+    font-weight: 700;
+    font-family: Inconsolata;
+}
+
+.page-content {
+    padding: 0px;
+}
+
+.page-content .center table {
+    margin-top: 50px;
+    border: 1px solid white;
+}
+
+.page-content .center table td {
+    border: 1px solid white;
+}
+
+td img {
+    height: 400px;
+}
+
+#menu-cell {
+    width: 100px;
+}
+
+.menu-container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    flex-grow: 1;
+}
+
+.menu-item button {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background: #b4c0e6;
+}
