@@ -1,0 +1,58 @@
+body {
+    /* background: url(https://i.pinimg.com/originals/dd/5b/9e/dd5b9e4f5e38650c0aec73c395a4eeda.jpg) */
+}
+
+.main-wrapper {
+    font-family: Inconsolata;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(76, 218, 76);
+    font-size: 20px;
+}
+
+.random-terminal {
+    background-color: #000000d2;
+    height: 100vh;
+    width: 20vw;
+}
+
+.main-terminal {
+    background-color: #000000d2;
+    height: 100vh;
+    width: 55vw;
+}
+
+.main-output {
+    margin: 10px;
+    height: 90%;
+    border: 1px solid white;
+    display: flex;
+    overflow: hidden;
+}
+
+.main-output span {
+    padding: 10px;
+    padding-top: 0px;
+    align-self: flex-end;
+}
+
+.main-input {
+    margin: 10px;
+    display: flex;
+}
+
+.main-input input {
+    color: rgb(76, 218, 76);
+    font-size: 20px;
+    background-color: #000000b7;
+    font-family: Inconsolata;
+}
+
+#sendText {
+    flex: 9;
+}
+
+#sendButton {
+    flex: 1;
+    font-size: 25px;
+}
