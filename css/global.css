@@ -40,6 +40,6 @@ body {
 
 .center {
     margin: auto;
-    width: fit-content;
+    width: max-content;
     text-align: center;
 }
