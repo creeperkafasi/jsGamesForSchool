@@ -26,11 +26,26 @@
                 <div class="title">
                     <div class="center">
                         S a y ı&nbsp;&nbsp;&nbsp;T a h m i n&nbsp;&nbsp;&nbsp;E t m e c e
+                        <br> (bozuk)
                     </div>
                 </div>
             </div>
+            <form class="center">
+                <label for="number">Tahmin giriniz (0-100):</label><br>
+                <input type="text" id="number">
+                <input type="button" value="Tahmin et" onclick="
+                    if (Number(document.getElementById('number').value)===sayi) {
+                        durum.innerText = 'Kazandınız! Yeniden denemek için sayfayı yenileyin'
+                    }
+                    else {
+                        durum.innerText = (Number(document.getElementById('number').value)<=sayi) ? 'daha küçük':'daha büyük'
+                    }
+                ">
+                <label for="durum" id="durum"></label>
+            </form>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
