@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoğraf Efektleri</title>
+
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="page-content">
+        <div class="center">
+            <div class="title-container">
+                <a href="../../">
+                    <div class="back-button">
+                        <div class="center">
+                            <button>
+                                geri<br>dön
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="title">
+                    <div class="center">
+                        F o t o ğ r a f&nbsp;&nbsp;&nbsp;E f e k t l e r i
+                    </div>
+                </div>
+            </div>
+            <img src="manzara.jpg" alt="resim" id="efektResim">
+
+            <div class="input-table-container">
+                <form class="center">
+                    <label for="grayscale">Siyah-Beyaz:</label>
+                    <input type="range" id="grayscale" name="grayscale" min="0" max="100" oninput="
+                    setEffects('grayscale',this.value);
+                    " value=0><br>
+
+                    <label for="contrast">Kontrast:</label>
+                    <input type="range" id="contrast" name="contrast" min="0" max="200" oninput="
+                    setEffects('contrast',this.value);
+                    " value=100><br>
+
+                    <label for="saturation">Renk:</label>
+                    <input type="range" id="sat" name="sat" min="0" max="500" oninput="
+                    setEffects('saturation',this.value);
+                    " value=100><br>
+                </form>
+            </div>
+
+            <script src="script.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>

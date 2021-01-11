@@ -16,9 +16,9 @@
                 Ana sayfaya dön <br> <------
             </button>
         </div>
-        <div class="title-main">
+        <div class="title-main center">
             Yılan Oyunu
-            <div class="title-secondary">
+            <div class="title-secondary center">
                 Herkesin sevdiği klasik yılan oyunu
             </div>
         </div>
@@ -42,7 +42,7 @@
             <canvas id="oyun-canvas"></canvas>
             <div class="center hızclass" style="width: 300px;">
                 Yavaşlık: <span id="speedNum">200</span>
-                <input type="range" name="yavaş" id="slowness" min="20" max="1000" value="200" oninput="
+                <input type="range" id="slowness" min="20" max="1000" value="200" oninput="
                 document.getElementById('speedNum').innerText=this.value;
                 clearInterval(mainLoopInterval);
                 mainLoopInterval = setInterval(mainloop,this.value);

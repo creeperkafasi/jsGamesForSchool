@@ -3,8 +3,8 @@ let cookieMultiplier = 1;
 let autoCookiesN = 0;
 let autoCookiesDelay = 1000;
 let autoInterval;
-let puanElement = document.getElementById("puan");
-let menuItemElements = [...document.getElementsByClassName("menu-item")];
+const puanElement = document.getElementById("puan");
+const menuItemElements = [...document.getElementsByClassName("menu-item")];
 let menuItems = [{
         "name": "2x Click Multiplier",
         "price": 30,
@@ -75,6 +75,8 @@ function update() {
     });
 }
 
+setInterval(update, 100);
+
 function setup() {
     puanElement.innerHTML = `Kurabiyeler:${cookies}`;
     menuItemElements.forEach((itemElement, index) => {
@@ -90,7 +92,5 @@ function setup() {
         update()
     }, autoCookiesDelay);
 }
-
-
 
 setup();

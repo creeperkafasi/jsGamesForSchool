@@ -1,5 +1,5 @@
 body {
-    /* background: url(https://i.pinimg.com/originals/dd/5b/9e/dd5b9e4f5e38650c0aec73c395a4eeda.jpg) */
+    background: url(https://i.pinimg.com/originals/dd/5b/9e/dd5b9e4f5e38650c0aec73c395a4eeda.jpg)
 }
 
 .main-wrapper {
@@ -14,6 +14,14 @@ body {
     background-color: #000000d2;
     height: 100vh;
     width: 20vw;
+    font-size: 15px;
+    display: inline-block;
+    overflow: auto;
+}
+
+.random-terminal::-webkit-scrollbar {
+    background: none;
+    width: 0px;
 }
 
 .main-terminal {
@@ -22,7 +30,7 @@ body {
     width: 55vw;
 }
 
-.main-output {
+#main-output {
     margin: 10px;
     height: 90%;
     border: 1px solid white;
@@ -30,18 +38,18 @@ body {
     overflow: hidden;
 }
 
-.main-output span {
+#main-output span {
     padding: 10px;
     padding-top: 0px;
     align-self: flex-end;
 }
 
-.main-input {
+#main-input {
     margin: 10px;
     display: flex;
 }
 
-.main-input input {
+#main-input input {
     color: rgb(76, 218, 76);
     font-size: 20px;
     background-color: #000000b7;

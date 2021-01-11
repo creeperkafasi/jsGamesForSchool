@@ -1,7 +1,7 @@
-let canvas = document.getElementById("oyun-canvas");
-let ctx = canvas.getContext("2d");
-let puanElement = document.getElementById("puanData");
-let gameoverElement = document.getElementById("gameoverMesaj");
+const canvas = document.getElementById("oyun-canvas");
+const ctx = canvas.getContext("2d");
+const puanElement = document.getElementById("puanData");
+const gameoverElement = document.getElementById("gameoverMesaj");
 [canvas.width, canvas.height] = [10, 10];
 let snake = [
     [1, 1],
@@ -11,9 +11,9 @@ let snake = [
 let direction;
 let gameover = false;
 let puan = 0;
-let snakeBodyColor = "#ff5d47";
-let snakeHeadColor = "#ff1e00";
-let appleColor = "#ff7700";
+const snakeBodyColor = "#ff5d47";
+const snakeHeadColor = "#ff1e00";
+const appleColor = "#ff7700";
 let applePos = [];
 genApple();
 
@@ -56,7 +56,6 @@ setInterval(function() {
 
 function mainloop() {
     if (direction) {
-
         //Hareket sistemi
         for (let i = 0; i < snake.length; i++) {
             if (snake[i + 1]) {

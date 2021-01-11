@@ -14,16 +14,19 @@
     <div class="main-wrapper">
         <div class="random-terminal left"></div>
         <div class="main-terminal">
-            <div class="main-output">
+            <div id="main-output">
                 <span>
                 </span>
             </div>
-            <div class="main-input">
+            <div id="main-input">
                 <input id="sendText" type="text" value="">
-                <input id="sendButton" type="submit" onclick="" value="✉️">
+                <input id="sendButton" type="submit" onclick="
+                    addLine(document.getElementById('main-output').children[0],
+                    document.getElementById('sendText').value)
+                " value="✉️">
             </div>
         </div>
-        <div class="random-terminal right">asdfghgfds</div>
+        <div class="random-terminal right"></div>
     </div>
 </body>
 

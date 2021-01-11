@@ -12,11 +12,7 @@
     z-index: -100;
     width: 100%;
     height: 100%;
-    background-color: --dark-main;
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-color: var(--dark-main);
 }
 
 .title-main {
@@ -47,25 +43,20 @@
 }
 
 .game-selector-container {
-    margin: auto;
     margin-top: 80px;
-    /* max-width: 80%; */
     background-color: #ffffff88;
     border-radius: 10px;
 }
 
 .flex-container {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    -ms-box-orient: horizontal;
+    padding: 0px;
+    margin: 0px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -moz-flex;
     display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .wrap {
